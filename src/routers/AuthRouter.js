@@ -4,8 +4,7 @@ import RegisterScreen from '../components/auth/RegisterScreen';
 import {
     BrowserRouter as
     Switch,
-    Route,
-    Redirect,
+    Route
 } from "react-router-dom";
 
 
@@ -15,10 +14,8 @@ const AuthRouter = () => {
             <div className='auth__main'>
                 <div className='auth__box-container'>
                 <Switch>
-                    <Route exact path="/auth/login" component={LoginScreen} />
-                    <Route exact path="/auth/register" component={RegisterScreen} />
-
-                    <Redirect to="/auth/login" />
+                    <Route path="/auth/login" component={LoginScreen} />
+                    <Route path="/auth/register" component={RegisterScreen} />
                 </Switch>
                 </div>
             </div>

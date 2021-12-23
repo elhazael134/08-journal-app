@@ -15,7 +15,7 @@ const AppRouter = () => {
                 <div>
                     <Switch>
                         <Route path="/auth" component={AuthRouter}/>
-                        <Route exact path="/" component={JournalScreen} />
+                        <Route path="/" component={JournalScreen} />
                         <Redirect to="/auth/login" />
                     </Switch>
                 </div>
